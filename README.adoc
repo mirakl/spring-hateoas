@@ -1,3 +1,17 @@
+= FORKED REPOSITORY
+
+This fork was made to create a version compatible with Spring Boot 4 but using Jackson 2.
+
+This is required because the mere presence of Jackson 3 on the classpath can trigger autoconfiguration or feature detection in some parts of Spring/Spring Boot.
+
+While we can decorrelate the upgrade to Spring Boot 4 from the upgrade to Jackson 3, Apps are encouraged to migrate to Jackson 3 soon.
+
+Deploy to our Maven repo with `mvn deploy -DaltDeploymentRepository=<repoId_from_settings.xml>::default::<repoUrl> (-DskipTests)`.
+
+We won't maintain this fork for longer than necessary for internal use and support only our internal use cases.
+
+== Original Readme
+
 image:https://spring.io/badges/spring-hateoas/ga.svg[link=https://spring.io/projects/spring-hateoas]
 image:https://spring.io/badges/spring-hateoas/snapshot.svg[link=https://spring.io/projects/spring-hateoas]
 image:https://badges.gitter.im/spring-projects/spring-hateoas.png[link=https://gitter.im/spring-projects/spring-hateoas]
@@ -9,7 +23,7 @@ image:https://jenkins.spring.io/buildStatus/icon?job=spring-hateoas%2F1.0.x&subj
 image:https://jenkins.spring.io/buildStatus/icon?job=spring-hateoas%2F0.25.x&subject=0.25.x[link=https://jenkins.spring.io/view/SpringHATEOAS/job/spring-hateoas/]
 
 
-= Spring HATEOAS
+== Spring HATEOAS
 
 This project provides some APIs to ease creating REST representations that follow the https://en.wikipedia.org/wiki/HATEOAS[HATEOAS] principle when working with Spring and especially Spring MVC. The core problem it tries to address is link creation and representation assembly.
 
