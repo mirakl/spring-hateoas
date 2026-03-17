@@ -836,7 +836,7 @@
 					<target>${source.level}</target>
 					<parameters>true</parameters>
 					<annotationProcessorPaths>
-						<!-- require since Java 21 -->
+						<!-- required since Java 21 -->
 						<path>
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
