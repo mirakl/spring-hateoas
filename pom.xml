@@ -200,7 +200,7 @@
 		</profile>
 
 		<profile>
-			<id>artifactory</id>
+			<id>artifactory-spring</id>
 			<properties>
 				<maven.test.skip>true</maven.test.skip>
 			</properties>
